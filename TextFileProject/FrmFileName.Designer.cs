@@ -54,6 +54,7 @@
             // btnOkay
             // 
             btnOkay.BackColor = Color.Maroon;
+            btnOkay.Cursor = Cursors.Hand;
             btnOkay.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOkay.ForeColor = Color.White;
             btnOkay.Location = new Point(168, 133);
@@ -73,6 +74,7 @@
             Controls.Add(label1);
             Controls.Add(txtFileName);
             Name = "FrmFileName";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmFileName";
             ResumeLayout(false);
             PerformLayout();

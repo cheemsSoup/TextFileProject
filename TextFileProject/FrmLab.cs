@@ -56,5 +56,17 @@ namespace TextFileProject
             FrmRegistration reg = new FrmRegistration();
             reg.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecords records = new FrmStudentRecords();
+            records.ShowDialog();
+        }
+
+        private void btnOpenFile_Click(object sender, EventArgs e)
+        {
+            FrmOpenTextFile openFile = new FrmOpenTextFile();
+            openFile.ShowDialog();
+        }
     }
 }

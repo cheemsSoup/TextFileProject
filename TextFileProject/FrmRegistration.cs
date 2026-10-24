@@ -51,7 +51,7 @@ namespace TextFileProject
                 string[] lines = new string[]
                 {
             "Student No.: " + txtStudentNo.Text,
-            "Full Name: " + txtLastName.Text + ", " + txtFirstName.Text + ", " + txtMI.Text + ".",
+            "Full Name: " + txtLastName.Text + ", " + txtFirstName.Text + " " + txtMI.Text + ".",
             "Program: " + cmbProgram.Text,
             "Gender: " + cmbGender.Text,
             "Age: " + age,
@@ -88,6 +88,12 @@ namespace TextFileProject
         private void FrmRegistration_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmStudentRecords records = new FrmStudentRecords();
+            records.ShowDialog();
         }
     }
 }

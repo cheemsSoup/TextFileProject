@@ -48,6 +48,7 @@
             label10 = new Label();
             txtContactNo = new TextBox();
             btnOkay = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -227,6 +228,7 @@
             // btnOkay
             // 
             btnOkay.BackColor = Color.Maroon;
+            btnOkay.Cursor = Cursors.Hand;
             btnOkay.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnOkay.ForeColor = Color.White;
             btnOkay.Location = new Point(351, 279);
@@ -237,11 +239,26 @@
             btnOkay.UseVisualStyleBackColor = false;
             btnOkay.Click += btnOkay_Click;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.Maroon;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(635, 279);
+            button1.Name = "button1";
+            button1.Size = new Size(137, 41);
+            button1.TabIndex = 23;
+            button1.Text = "RECORDS";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // FrmRegistration
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(835, 332);
+            Controls.Add(button1);
             Controls.Add(btnOkay);
             Controls.Add(txtContactNo);
             Controls.Add(label10);
@@ -263,6 +280,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FrmRegistration";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmRegistration";
             Load += FrmRegistration_Load;
             ResumeLayout(false);
@@ -291,5 +309,6 @@
         private Label label10;
         private TextBox txtContactNo;
         private Button btnOkay;
+        private Button button1;
     }
 }
