@@ -95,7 +95,7 @@
             btnUpload.UseVisualStyleBackColor = false;
             btnUpload.Click += btnUpload_Click;
             // 
-            // StudentRecords
+            // FrmStudentRecords
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -105,10 +105,11 @@
             Controls.Add(btnRegister);
             Controls.Add(label1);
             Controls.Add(lvRecords);
-            Name = "StudentRecords";
+            Name = "FrmStudentRecords";
             Text = "StudentRecords";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            Load += this.FrmStudentRecords_Load_1;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
